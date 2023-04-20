@@ -18,10 +18,10 @@ router.post("/register", async (req, res) => {
 })
 
 // 登陆
-router.post("/login", (req, res) => {
+router.get("/login", (req, res) => {
   res.send({
     status: 200,
-    message: "success"
+    message: "服务返回的消息4444"
   })
   res.end()
 })

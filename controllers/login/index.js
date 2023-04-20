@@ -1,14 +1,14 @@
-const { connection } = require("../../config/db")
+// const { connection } = require("../../config/db")
 // 引入校验数据中间件
-const Joi = require('joi')
+// const Joi = require('joi')
 
 // 定义校验规则
 const schema = {
   // 必须是字符串类型，字母数字，最小6位，最长16位，必填
-  username: Joi.string().alphanum().min(6).max(16).required().error(new Error("用户名不满足格式")),
-  password: Joi.string().alphanum().min(6).max(16).required().error(new Error("密码不满足格式")),
+  // username: Joi.string().alphanum().min(6).max(16).required().error(new Error("用户名不满足格式")),
+  // password: Joi.string().alphanum().min(6).max(16).required().error(new Error("密码不满足格式")),
   // 角色信息的值必须是1，2中的一个
-  role: Joi.number().valid([1, 2]).required().error(new Error("角色信息错误"))
+  // role: Joi.number().valid([1, 2]).required().error(new Error("角色信息错误"))
 }
 
 // 校验用户注册信息
