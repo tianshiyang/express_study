@@ -17,11 +17,13 @@ router.post("/register", async (req, res) => {
   // res.end()
 })
 
+let count = 1
+
 // 登陆
 router.get("/login", (req, res) => {
   res.send({
     status: 200,
-    message: "服务返回的消息4444"
+    message: `"服务返回的消息"${count ++}`
   })
   res.end()
 })
